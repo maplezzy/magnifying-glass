@@ -25,4 +25,4 @@ import MagnifyingGlass from 'my-magnifying-glass';
 
 # 效果图
 
-![image-20220914203633799](F:\黑马培训\components-common\magnifying-glass\README.assets\image-20220914203633799.png)
+![image-20220914203633799](.\README.assets\image-20220914203633799.png)

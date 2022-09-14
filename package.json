@@ -1,6 +1,6 @@
 {
   "name": "my-magnifying-glass",
-  "version": "1.0.05",
+  "version": "1.0.6",
   "description": "图片放大镜",
   "main": "index.js",
   "scripts": {

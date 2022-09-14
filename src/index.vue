@@ -66,13 +66,13 @@ const onMouseMove = (e) => {
 <style lang="scss" scoped>
 .magnify-container {
   display: flex;
-  width: 580px;
-  height: 460px;
+  width: 100%;
+  height: 100%;
   padding: 30px 50px;
 
   .tb-booth {
-    width: 400px;
-    height: 400px;
+    width: 100%;
+    height: 100%;
     background: #f5f5f5;
     cursor: move;
     position: relative;
@@ -89,8 +89,8 @@ const onMouseMove = (e) => {
       position: absolute;
       top: 0;
       left: 0;
-      width: 200px;
-      height: 200px;
+      width: 50%;
+      height: 50%;
       background-color: rgba(0, 0, 0, .7);
       opacity: 0.5;
       cursor: move;
@@ -99,9 +99,9 @@ const onMouseMove = (e) => {
     .big-img_box {
       position: absolute;
       top: 0;
-      left: 400px;
-      width: 400px;
-      height: 400px;
+      left: 130%;
+      width: 100%;
+      height: 100%;
       background-color: #fff;
       border: 1px solid #cccccc;
       overflow: hidden;
