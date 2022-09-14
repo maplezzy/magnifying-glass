@@ -1,9 +1,9 @@
 <script setup>
-import { ref, reactive, onMounted, nextTick } from 'vue';
+import { ref, reactive } from 'vue';
 const props = defineProps({
-  imageArray: {
-    type: Array,
-    default: () => [],
+  imageSrc: {
+    type: String,
+    default: '',
   },
 });
 const boothRef = ref(null);
@@ -50,14 +50,14 @@ const onMouseMove = (e) => {
 // 让imgSrc等于imageArray的第一项
 
 
-const imgSrc = ref('');
-onMounted(async () => {
-  await nextTick();
-  imgSrc.value = props.imageArray[0];
-});
-function changeImg(item) {
-  imgSrc.value = item;
-}
+// const imgSrc = ref('');
+// onMounted(async () => {
+//   await nextTick();
+//   imgSrc.value = props.imageArray[0];
+// });
+// function changeImg(item) {
+//   imgSrc.value = item;
+// }
 </script>
 
 <template>
@@ -68,10 +68,6 @@ function changeImg(item) {
       <div class="big-img_box" ref="bigImgBox" v-show="state.boxShow">
         <img class="big-img" ref="bigImg" :src="imgSrc" />
       </div>
-    </div>
-
-    <div class="img-wraper">
-      <img v-for="item in props.imageArray" :key="item" :src="item" @mouseenter="changeImg(item)">
     </div>
   </div>
 </template>
@@ -128,22 +124,5 @@ function changeImg(item) {
     }
   }
 
-  .img-wraper {
-    margin-left: 20px;
-    display: flex;
-    flex-direction: column;
-    justify-content: space-around;
-    height: 400px;
-
-    img {
-      width: 68px;
-      height: 68px;
-
-      &:hover {
-        cursor: pointer;
-        border: 1px solid #27ba9b;
-      }
-    }
-  }
 }
 </style>
