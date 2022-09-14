@@ -1,6 +1,6 @@
 <script setup>
 import { ref, reactive } from 'vue';
-const props = defineProps({
+defineProps({
   imageSrc: {
     type: String,
     default: '',
@@ -49,24 +49,15 @@ const onMouseMove = (e) => {
 };
 // 让imgSrc等于imageArray的第一项
 
-
-// const imgSrc = ref('');
-// onMounted(async () => {
-//   await nextTick();
-//   imgSrc.value = props.imageArray[0];
-// });
-// function changeImg(item) {
-//   imgSrc.value = item;
-// }
 </script>
 
 <template>
   <div class="magnify-container">
     <div class="tb-booth" @mouseenter="onMouseEnter" @mouseleave="onMouseLeave" @mousemove="onMouseMove" ref="boothRef">
-      <img class="small-img" :src="imgSrc" />
+      <img class="small-img" :src="imageSrc" />
       <div class="mask" ref="mask" v-show="state.boxShow" />
       <div class="big-img_box" ref="bigImgBox" v-show="state.boxShow">
-        <img class="big-img" ref="bigImg" :src="imgSrc" />
+        <img class="big-img" ref="bigImg" :src="imageSrc" />
       </div>
     </div>
   </div>
