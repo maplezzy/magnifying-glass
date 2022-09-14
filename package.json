@@ -1,0 +1,25 @@
+{
+  "name": "my-magnifying-glass",
+  "version": "1.0.0",
+  "description": "图片放大镜",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+ssh://git@github.com/maplezzy/magnifying-glass.git"
+  },
+  "keywords": [
+    "放大镜"
+  ],
+  "author": "maplezz",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/maplezzy/magnifying-glass/issues"
+  },
+  "homepage": "https://github.com/maplezzy/magnifying-glass#readme",
+  "dependencies": {
+    "vue": "^3.2.39"
+  }
+}
