@@ -1,5 +1,5 @@
 # magnifying-glass
-图片放大镜组件
+vue3 图片放大镜组件
 
 # 安装my-magnifying-glass
 
